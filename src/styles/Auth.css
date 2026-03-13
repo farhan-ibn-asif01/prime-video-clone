@@ -1,0 +1,146 @@
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0f171e, #1a2332);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-header {
+  width: 100%;
+  padding: 20px 50px;
+  border-bottom: 1px solid #2a3f5f;
+}
+
+.auth-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00a8e1;
+  cursor: pointer;
+}
+
+.auth-box {
+  background-color: #0f171e;
+  border: 1px solid #2a3f5f;
+  border-radius: 8px;
+  padding: 40px;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #2a3f5f;
+  border-radius: 4px;
+  background-color: #1a2332;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #00a8e1;
+}
+
+.form-group small {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.error-message {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #00a8e1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover:not(:disabled) {
+  background-color: #0086b3;
+}
+
+.auth-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-divider {
+  text-align: center;
+  margin: 25px 0;
+  position: relative;
+}
+
+.auth-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #2a3f5f;
+  z-index: 0;
+}
+
+.auth-divider span {
+  background-color: #0f171e;
+  padding: 0 10px;
+  color: #aaa;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-button-secondary {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #2a3f5f;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button-secondary:hover {
+  background-color: #1a2332;
+}

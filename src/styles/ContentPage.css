@@ -1,0 +1,64 @@
+.content-page {
+  min-height: 100vh;
+  background-color: #0f171e;
+  padding-top: 100px;
+}
+
+.page-header {
+  padding: 0 50px 30px;
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 50px 50px;
+}
+
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0 20px 30px;
+  }
+}
+
+.grid-card {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.grid-card:hover {
+  transform: scale(1.05);
+}
+
+.grid-thumbnail {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.grid-info {
+  margin-top: 10px;
+}
+
+.grid-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.grid-meta {
+  font-size: 14px;
+  color: #aaa;
+  display: flex;
+  gap: 10px;
+}
